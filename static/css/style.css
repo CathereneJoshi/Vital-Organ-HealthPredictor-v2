@@ -11,6 +11,22 @@ html {
   overflow-x: hidden;
 }
 
+.form-center1{
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%,50%);
+
+}
+
+.form-center2{
+  position: absolute;
+  left: 48%;
+  top: 24%;
+  transform: translate(-50%,50%);
+
+}
+
 body {
   line-height: 1.6;
   font-family: "Roboto", sans-serif;
