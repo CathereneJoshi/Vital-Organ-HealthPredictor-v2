@@ -129,14 +129,16 @@
 			</div>
 		</div>
 	</nav>
-	<h1 align="center">Please Upload Audio File</h1>
+	
+	<h1 align="center">Please Upload Audio File</h1><br><br>
+
 <form action = "/service" method = "post" enctype="multipart/form-data" align="center">  
-	<input type="file" name="file" /> <br>
-	<input type = "submit" value="Upload">  
-</form>  
+	<div class="form-center1"><input type="file" name="file" /></div> <br>
+	<div class="form-center2"><input type = "submit" value="Upload">  </div>
+</form></div><br>
 {% if heartbeat_status != None %}
-<p style="color:rgb(255, 0, 0)"><h1>Heart Status is : {{ heartbeat_status }}</h1></p>
-<p style="color:rgb(255, 0, 0)"><h1>Prediction is : {{ confidence }}</h1></p>
+<p style="color:rgb(255, 0, 0)"><h1><center>Heart Status is : <span class="redText">{{ heartbeat_status }}</span></center></h1></p>
+<p style="color:rgb(255, 0, 0)"><h1><center>Prediction is : {{ confidence }}</center></h1></p>
 {% endif %}
 </header>
 <div><p><br></p></div>
